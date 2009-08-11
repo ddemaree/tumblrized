@@ -1,0 +1,75 @@
+@import url(reset.css);
+
+body {
+	background: #fff;
+	color: #333;
+	font-family: Helvetica;
+	font-size: 13px;
+	line-height: 1.6em;
+}
+
+#container {
+	width: 800px;
+	margin: 20px auto;
+}
+
+#posts {
+	margin-left: 10px;
+	width: 540px;
+	float: left;
+}
+
+#sidebar {
+	margin-right: 10px;
+	float: right;
+	width: 220px;
+	background: #aaa;
+}
+
+/* @group Header */
+
+#header {
+	padding: 0 0 20px;
+}
+
+#header h1 {
+	font-size: 24px;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	float: left;
+}
+
+/* @end */
+
+#posts {
+	background: #ccc;
+}
+
+/* @group Posts */
+
+#posts hr {
+	clear: both;
+	border: 0;
+	height: 30px;
+	width: 500px;
+}
+
+#posts .post {
+	margin-left: -80px;
+}
+
+#posts .post .meta {
+	float: left;
+	width: 64px;
+	padding-right: 16px;
+}
+
+#posts .post .content {
+	float: left;
+	width: 540px;
+}
+
+
+/* @end */
+

@@ -1,0 +1,1213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+    
+        .                                  .o8       oooo               
+      .o8                                 "888       `888               
+    .o888oo oooo  oooo  ooo. .oo.  .oo.    888oooo.   888  oooo d8b     
+      888   `888  `888  `888P"Y88bP"Y88b   d88' `88b  888  `888""8P     
+      888    888   888   888   888   888   888   888  888   888         
+      888 .  888   888   888   888   888   888   888  888   888     .o. 
+      "888"  `V88V"V8P' o888o o888o o888o  `Y8bod8P' o888o d888b    Y8P
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <!-- DEFAULT COLORS -->
+  <meta name="color:Background" content="#3b627e" />
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>demaree.me</title>
+  
+  <link rel="shortcut icon" href="http://assets.tumblr.com/images/default_avatar_16.gif" />
+  <link rel="alternate" type="application/rss+xml" href="http://demaree.me/rss" />
+  <style type="text/css">
+    body {
+      background: #628101;
+      margin: 0;
+      padding: 0;
+      font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+    }
+    
+    .clear {
+      clear: both;
+      height: 1px;
+    }
+    
+    a img {
+      border: none;
+    }
+    
+    #wrapper {
+      width: 845px;
+      margin: 0 auto;
+    }
+    
+      #wrapper #title {
+        margin: 30px 0;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, Verdana, sans-serif;
+        text-shadow: #2f2f2f 1px 3px 5px;
+        letter-spacing: -1px;
+      }
+      
+        #wrapper #title a {
+          color: #fff;
+          text-decoration: none;
+        }
+    
+      #wrapper #content {
+        width: 520px;
+        float: left;
+      }
+      
+        #wrapper #content .post {
+          font-family: Arial, Helvetica, Verdana, sans-serif;
+          background: #fff;
+          padding: 10px;
+          position: relative;
+        }
+    
+          #wrapper #content .post .media {
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          
+          #wrapper #content .post .quotebg {
+            font-family: georgia, serif;
+            font-size: 150px;
+            color: #628101;
+            opacity: 0.2;
+            filter: alpha(opacity=20);
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+            position: absolute;
+            top: 70px;
+            left: 10px;
+          }
+          
+          #wrapper #content .post .quote {
+            color: #628101;
+            font-weight: bold;
+            padding: 20px;
+          }
+          
+          #wrapper #content .post .quote.short {
+            font-size: 33px;
+            line-height: 35px;
+          }
+          
+          #wrapper #content .post .quote.medium {
+            font-size: 25px;
+            line-height: 28px;
+          }
+          
+          #wrapper #content .post .quote.long {
+            font-size: 18px;
+            line-height: 22px;
+          }
+                    
+            #wrapper #content .post .quote_source *:first-child {
+              margin-top: 0px;
+            }
+            
+            #wrapper #content .post .quote_source *:last-child {
+              margin-bottom: 0px;
+            }
+            
+            #wrapper #content .post .quote *:first-child {
+              margin-top: 0px;
+            }
+
+            #wrapper #content .post .quote *:last-child {
+              margin-bottom: 0px;
+            }
+            
+          #wrapper #content .post .copy {
+            color: #6e7173;
+            padding: 10px;
+            font-size: 13px;
+            line-height: 15px;
+          }
+          
+            #wrapper #content .post .copy a {
+              color: #6e7173;
+              text-decoration: underline;
+            }
+        
+          #wrapper #content .post .audio {
+            background: #eaeaea;
+            float: left;
+            padding: 7px;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+          }
+                            
+            #wrapper #content .post .audio .player {
+              float: left;
+            }
+            
+              #wrapper #content .post .audio .player .audio_player embed {
+                border: 1px solid #c8c8c8;
+              }
+            
+            #wrapper #content .post .audio .meta {
+              padding: 8px 13px;
+              height: 13px;
+              float: left;
+              color: #666;
+              font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+              font-size: 11px;
+            }
+            
+              #wrapper #content .post .audio .meta a {
+                color: #666;
+                text-decoration: none;
+              }
+          
+          #wrapper #content .post .title {
+            color: #494949;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 10px 0 10px;
+          }
+                    
+          #wrapper #content .post .chat {
+            background-color: #fff;
+            border-left: 5px solid #dedddd;
+            margin: 10px 10px 0 10px;
+            font-size: 14px;
+          }
+                    
+            #wrapper #content .post .chat .lines {
+              margin-left: 1px;
+            }
+            
+              #wrapper #content .post .chat .lines .line {
+                background-color: #eaeaea;
+                color: #494949;
+                margin-bottom: 1px;
+                padding: 3px 5px;
+              }
+            
+              #wrapper #content .post .chat .lines .line.even {
+                background-color: #dedddd;
+              }
+          
+            #wrapper #content .post .link {
+              margin: 4px 0 2px 0;
+              font-size: 16px;
+              line-height: 25px;
+            }
+              
+              #wrapper #content .post .link a {
+                background-color: #628101;
+                color: #fff;
+                padding: 5px 7px;
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+              }
+              
+              #wrapper #content .post .link a:hover {
+                opacity: 0.9;
+                filter: alpha(opacity=90);
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+              }
+          
+          #wrapper #content .post .footer {
+            background: #eaeaea;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+            font-size: 11px;
+            color: #666;
+            padding: 5px 10px;
+            margin-top: 10px;
+          }
+          
+            #wrapper #content .post .footer:hover {
+              opacity: 0.9;
+              filter: alpha(opacity=90);
+              -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+            }
+          
+            #wrapper #content .post .footer .date {
+              width: 80%;
+              float: left;
+            }
+            
+            #wrapper #content .post .footer .notes {
+              width: 18%;
+              float: right;
+              text-align: right;
+            }
+            
+              #wrapper #content .post .footer .tags a {
+                color: #4a4a51;
+                text-decoration: underline;
+              }
+              
+                #wrapper #content .post .footer .tags .tag-commas:last-child {
+                  display: none;
+                }
+          
+            #wrapper #content .post a {
+              color: #a9b7c0;
+              text-decoration: none;
+            }
+            
+            #wrapper #content .post .copy blockquote {
+    	        margin: 10px 0px 10px 10px;
+    	        padding-left: 15px;
+    	        border-left: solid 4px #dcdcdc;
+      	    }
+
+    	        #wrapper #content .post .copy  blockquote blockquote {
+  	            border-left: solid 4px #cccccc;
+        	    }
+
+          	    #wrapper #content .post .copy  blockquote blockquote blockquote {
+    	            border-left: solid 4px #bcbcbc;
+          	    }
+
+        	        #wrapper #content .post .copy  blockquote blockquote blockquote blockquote {
+      	            border-left: solid 4px #acacac;
+            	    }
+
+              	    #wrapper #content .post .copy  blockquote blockquote blockquote blockquote blockquote {
+        	            border-left: solid 4px #9c9c9c;
+              	    }
+
+          	        #wrapper #content .post .copy  blockquote blockquote blockquote blockquote blockquote blockquote {
+        	            border-left: solid 4px #8c8c8c;
+              	    }
+            
+            #wrapper #content .bottom {
+              background: url(http://assets.tumblr.com/themes/redux/shadow-post.png) top center no-repeat transparent;
+              width: 513px;
+              height: 40px;
+              margin: 0 auto;
+            }
+            
+            #wrapper #content #navigation {
+              text-align: right;
+              padding-bottom: 35px;
+            }
+            
+              #wrapper #content #navigation a {
+                background-color: #fff;
+                color: #628101;
+                padding: 5px 10px;
+                text-decoration: none;
+                margin-left: 25px;
+              }
+          
+              #wrapper #content #navigation a:hover {
+                opacity: 0.9;
+                filter: alpha(opacity=90);
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+              }
+    
+              #wrapper #content .post .notecontainer {
+                background: #eaeaea;
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+                font-size: 11px;
+                color: #666;
+                margin-top: 10px;
+                margin-bottom: -10px;
+              }
+
+                  #wrapper #content .post .notecontainer a {
+                    color: #666;
+                    text-decoration: underline;
+                  }
+
+                  #wrapper #content .post .notecontainer ol.notes {
+                    padding: 0px 0 10px 0;
+                    list-style-type: none;
+                    font-size: 11px;
+                  }
+
+                    #wrapper #content .post .notecontainer ol.notes li.note {
+                      padding: 10px 10px 0 10px;
+                    }
+
+                      #wrapper #content .post .notecontainer ol.notes li.note img.avatar {
+                        vertical-align: -4px;
+                        margin-right: 10px;
+                        width: 16px;
+                        height: 16px;
+                      }
+
+                      #wrapper #content .post .notecontainer ol.notes li.note span.action {
+                        font-weight: normal;
+                      }
+
+                      #wrapper #content .post .notecontainer ol.notes li.note .answer_content {
+                        font-weight: normal;
+                      }
+
+                      #wrapper #content .post .notecontainer ol.notes li.note blockquote {
+                        border-left: 2px solid #666;
+                        padding: 4px 10px;
+                        margin: 10px 0px 0px 25px;
+                      }
+
+                        #wrapper #content .post .notecontainer ol.notes li.note blockquote a {
+                          text-decoration: none;
+                        }
+      
+        #wrapper #content #searchresults {
+          color: #fff;
+          margin: 0 0 15px 0;
+          text-shadow: #2f2f2f 1px 3px 5px;
+          font-family: Arial, Helvetica, Verdana, sans-serif;
+          font-size: 20px;
+        }
+      
+      #wrapper #sidebar {
+        width: 250px;
+        float: right;
+        color: #628101;
+      }
+      
+        #wrapper #sidebar a {
+          color: #628101;
+        }
+        
+        #wrapper #sidebar #top {
+          background: #fff;
+          padding: 0 20px;
+          -moz-border-radius-topleft: 10px;
+          -webkit-border-top-left-radius: 10px;
+          -moz-border-radius-topright: 10px;
+          -webkit-border-top-right-radius: 10px;
+        }
+      
+          #wrapper #sidebar #top #avatar {
+            width: 146px;
+            height: 146px;
+            padding: 8px 0 0 9px;
+            background: url(http://assets.tumblr.com/themes/redux/avatar-bg.png) top left no-repeat transparent;
+            position: relative;
+            top: -24px;
+            left: -5px;
+          }
+        
+          #wrapper #sidebar #top #description {
+            font-size: 11px;
+            position: relative;
+            top: -18px;
+          }
+          
+            #wrapper #sidebar #top #description a {
+              color: #628101;
+              text-decoration: underline;
+            }
+          
+          #wrapper #sidebar #top #search {
+            background: #fff;
+            border: 1px solid #628101;
+            
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+          }
+          
+          #wrapper #sidebar #top #search-scope {
+            padding-top: 5px;
+            font-size: 11px;
+            text-align: center;
+          }
+          
+            #wrapper #sidebar #top #search-scope input,
+            #wrapper #sidebar #top #search-scope label {
+              cursor: pointer;
+            }
+        
+            #wrapper #sidebar #top #search form {
+              margin: 0;
+            }
+        
+              #wrapper #sidebar #top #search form .query {
+                padding: 5px;
+                border: none;
+                background: transparent;
+                outline: none;
+                width: 125px;
+                float: left;
+                color: #628101;
+              }
+          
+              #wrapper #sidebar #top #search form .submit {
+                background: #628101;
+                color: #fff;
+                border: none;
+                padding: 5px 7px;
+                margin: 2px 2px 2px 0;
+                float: right;
+                border-radius: 3px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                cursor: pointer;
+              }
+              
+              #wrapper #sidebar #top #search form .submit:hover {
+                opacity: 0.9;
+                filter: alpha(opacity=90);
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+              }
+        
+          #wrapper #sidebar #top .heading {
+            color: #fff;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 17px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #628101;
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+            -moz-border-radius-topright: 4px;
+            -webkit-border-top-right-radius: 4px;
+          }
+          
+          #wrapper #sidebar #top a .heading {
+            color: #fff;
+            text-decoration: none;
+          }
+        
+          #wrapper #sidebar #top .heading#followontumblr {
+            background: url(http://assets.tumblr.com/themes/redux/sidebar-follow-on-verbose.png) 10px center no-repeat #628101;
+            text-indent: -9999px;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+          }
+          
+          #wrapper #sidebar #top .heading#followontumblr:hover,
+          #wrapper #sidebar #top .heading#twitter:hover {
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+          }
+        
+          #wrapper #sidebar #top .heading#twitter {
+            background: url(http://assets.tumblr.com/themes/redux/sidebar-twitter.png) right center no-repeat #628101;
+          }
+        
+          #wrapper #sidebar #top .heading#following {
+            background: url(http://assets.tumblr.com/themes/redux/sidebar-following.png) right center no-repeat #628101;
+          }
+        
+          #wrapper #sidebar #top .content {
+            margin-top: 2px;
+            padding: 7px 10px;
+            background: #eaeaea;
+            color: #666;
+            font-size: 11px;
+          }
+          
+            #wrapper #sidebar #top a {
+              text-decoration: none;
+            }
+          
+            #wrapper #sidebar #top #following-avatars.content {
+              padding: 4px;
+            }
+          
+                #wrapper #sidebar #top #following-avatars.content a img {
+                  margin: 5px;
+                }
+        
+            #wrapper #sidebar #top #buttons {
+              padding: 20px 0 0 0;
+            }
+            
+              #wrapper #sidebar #top #buttons .button {
+                width: 35%;
+                height: 21px;
+                float: left;
+                background: left center no-repeat transparent;
+                padding: 2px 0 0 30px;
+                font-size: 14px;
+              }
+              
+                #wrapper #sidebar #top #buttons a {
+                  color: #628101;
+                  text-decoration: none;
+                }
+              
+                #wrapper #sidebar #top #buttons div {
+                  padding-bottom: 10px;
+                }
+              
+              #wrapper #sidebar #top #buttons .button#button-rss {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-rss.png?2);
+              }
+              
+              #wrapper #sidebar #top #buttons .button#button-random {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-random.png?2);
+              }
+              
+              #wrapper #sidebar #top #buttons .button#button-archive {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-archive.png?2);
+              }
+              
+              #wrapper #sidebar #top #buttons .button#button-mobile {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-mobile.png?2);
+              }
+        
+          #wrapper #sidebar #bottom {
+            background: url(http://assets.tumblr.com/themes/redux/sidebar-bottom.png) top center no-repeat transparent;
+            width: 250px;
+            height: 25px;
+          }
+          
+          #wrapper #sidebar #copyright {
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 10px;
+          }
+          
+            #wrapper #sidebar #copyright a {
+              color: #fff;
+              margin-left: 15px;
+            }
+  
+  </style>
+  <!--[if lt IE 7.]>
+    <style type="text/css">
+      #wrapper #sidebar #bottom {
+        background: transparent;
+      }
+      
+      #wrapper #sidebar #top #avatar {
+        background: none;
+      }
+      
+      #wrapper #sidebar #top #avatar img {
+        border: 5px solid #f1f1f1;
+      }
+      
+      #wrapper #sidebar #top .heading#followontumblr {
+        background-image: none;
+        text-indent: 0;
+      }
+    
+      #wrapper #sidebar #top .heading#twitter {
+        background-image: none;
+      }
+    
+      #wrapper #sidebar #top .heading#following {
+        background-image: none;
+      }
+
+      #wrapper #content .post .audio .player {
+        float: none;
+      }
+      
+      #wrapper #content .post .audio .meta {
+        display: none;
+        float: none;
+      }
+    </style>
+  <![endif]-->
+  
+  <!--[if lt IE 8.]>
+    <style type="text/css">
+      #wrapper #content .bottom {
+        background: transparent;
+      }
+      
+      #wrapper #content .post .footer {
+        background: transparent;
+        color: #000;
+      }
+      
+      #wrapper #content .post .audio {
+        float: none;
+        background: transparent;
+      }
+      
+      #wrapper #content .post .notecontainer .notes {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  <![endif]-->
+  <style type="text/css"></style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="title"><a href="/">demaree.me</a></div>
+    
+    <div id="content">
+      
+      
+      
+      
+      
+            
+        <div class="post">
+          
+          
+          
+          
+            <div class="media"><object width="500" height="411"><param name="movie" value="http://www.youtube.com/v/LU5rpwG4W8g&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/LU5rpwG4W8g&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowFullScreen="true" wmode="transparent"></embed></object></div>
+            
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/143620112">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                55 seconds ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+            <div class="media"><a href="http://www.wired.com/culture/lifestyle/magazine/17-08/by_media_diet"><img src="http://7.media.tumblr.com/FdFFtXHlopz84gdd7BurxapDo1_500.jpg" alt="Media diet. They&amp;#8217;re crazy if they think people only spend 45 minutes a day on Twitter." /></a></div>
+            <div class="copy"><a href="http://www.wired.com/culture/lifestyle/magazine/17-08/by_media_diet">Media diet</a>. They&#8217;re crazy if they think people <em>only</em> spend 45 minutes a day on Twitter.</div>
+          
+          
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/142871292/media-diet-theyre-crazy-if-they-think-people">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                1 day ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+          
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+            <div class="link"><a href="http://www.zeldman.com/2009/07/16/html-5-is-a-mess-now-what/" >Jeffrey Zeldman: &quot;HTML 5 is a mess. Now what?&quot; &raquo;</a></div>
+            <div class="copy"><p>Less an opinion than a summary of the discussion that&#8217;s flared up since XHTML2 was killed earlier this month.</p>
+
+<p>As this developer sees it, a lot of people seem to have confused a couple of awesome HTML5 features — standards-based video embedding, client-side database support, cool new structural tags like <code>header</code> — for the spec as a whole. The new HTML 5&#160;<em>features</em> are undeniably awesome, and hopefully we won&#8217;t have to wait till 2015 to enjoy them. But having to use classes or IDs to denote sidebars or dialogue is hardly the most annoying or problematic thing about HTML, and the idea that if WHATWG disagrees with a change they can just fork the spec is simply insane.</p></div>
+          
+          
+          <a href="http://demaree.me/post/142869112/jeffrey-zeldman-html-5-is-a-mess-now-what">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                1 day ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+          
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+            <div class="link"><a href="http://www.amazon.com/Free-ebook/dp/B002DYJR4G/ref=sr_1_1?ie=UTF8&amp;s=digital-text&amp;qid=1247689100&amp;sr=1-1" >&#039;Free&#039; Available on Kindle For, Well, Free &raquo;</a></div>
+            <div class="copy">The Kindle edition of <em>Wired</em> editor Chris Anderson&#8217;s new book about how giving shit away is the future of business is, appropriately, now available at no charge. I just downloaded it to my iPhone, though I can&#8217;t see it being more entertaining than <a href="http://www.newyorker.com/arts/critics/books/2009/07/06/090706crbo_books_gladwell">Malcolm Gladwell&#8217;s review of it</a>.</div>
+          
+          
+          <a href="http://demaree.me/post/142865698/free-available-on-kindle-for-well-free">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                1 day ago
+                
+                
+                from bookmarklet
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+            <div class="media"><a href="http://consumerist.com/5315276/jewel%20osco-resorts-to-sarcasm#c14244383"><img src="http://1.media.tumblr.com/FdFFtXHlopz2uxxqLFqLdQ7eo1_400.jpg" alt="" /></a></div>
+            
+          
+          
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/142796447">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                1 day ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+            <div class="media"><a href="http://www.eatmedaily.com/2009/07/brooklyn-fares-packaging-and-graphic-design/"><img src="http://16.media.tumblr.com/FdFFtXHlopxl2fqukKD6JQj4o1_500.jpg" alt="Awesomely beautiful and witty branding design for Brooklyn Fare, a new gourmet market somewhere in (yes) Brooklyn. This is like the coffee-cup equivalent to a hip t-shirt that makes cute girls stare at your chest, then say to you, &amp;#8220;sorry, I was just trying to read your shirt.&amp;#8221; But, like, in a good way." /></a></div>
+            <div class="copy"><a href="http://www.eatmedaily.com/2009/07/brooklyn-fares-packaging-and-graphic-design/">Awesomely beautiful and witty branding design for Brooklyn Fare</a>, a new gourmet market somewhere in (yes) Brooklyn. This is like the coffee-cup equivalent to a hip t-shirt that makes cute girls stare at your chest, then say to you, &#8220;sorry, I was just trying to read your shirt.&#8221; But, like, in a good way.</div>
+          
+          
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/142086196/awesomely-beautiful-and-witty-branding-design-for">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                2 days ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+          
+          
+        
+          
+          
+          
+            <div class="quote long">[Some developers] seem to find writing cover letters too tedious to bother with. Instead, they&#8217;ll find jobs through networking, or the jobs will just come to them. Personally, I would be highly dubious of a company that hires simply based on who you know. That seems like the kind of company where you end up working with the boss&#8217;s nephew who is &#8220;good with computers&#8221;. A company&#8217;s hiring process is usually a pretty good indicator of what kind of talent it employs, and thus the kind of quality the company has.</div>
+            <div class="copy">
+              <div class="quotebg">“</div>
+              
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" style="width: 20px">&mdash;</td>
+                    <td valign="top" class="quote_source">
+                      <a href="http://hicks-wright.net/blog/reddits-entitlement-complex/">Reddit&#8217;s Entitlement Complex</a> (via <a href="http://www.37signals.com/svn/">Signal vs. Noise</a>)
+                    </td>
+                  </tr>
+                </table>
+              
+            </div>
+          
+            
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/141677863/some-developers-seem-to-find-writing-cover">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                2 days ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+            <div class="media"><a href="http://www.amronexperimental.com/Split-Ring-Key.html"><img src="http://9.media.tumblr.com/FdFFtXHlopwj68gpiI16XFX3o1_500.jpg" alt="Split-Ring-Key." /></a></div>
+            <div class="copy"><a href="http://www.amronexperimental.com/Split-Ring-Key.html">Split-Ring-Key</a>.</div>
+          
+          
+          
+        
+          
+          
+          
+            
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/141603132/split-ring-key">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                2 days ago
+                
+                
+                from bookmarklet
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+          
+          
+        
+          
+          
+          
+            
+          
+            <div class="title">Lifestyle innovation.</div>
+            <div class="copy"><p>Two discoveries made today:</p>
+
+<h3>Parking my bike two blocks away from work</h3>
+
+<p>Since starting my new job three weeks ago I&#8217;ve been using the ample bike parking outside my new office, which so happens to be at Michigan Ave/South Water St, a straight shot from where I cross the river into downtown at Clark &amp; Wacker.</p>
+
+<p>This has worked all right, but has raised a couple of first-world-type problems:</p>
+
+<ol>
+<li><p>In the mornings I like to grab a coffee from <a href="http://www.intelligentsiacoffee.com/">Intelligentsia</a> on Randolph, two blocks from the office. Riding directly there and walking my bike back is annoying, but then again so is walking there and back after parking my bike.</p></li>
+<li><p>Michigan Avenue at five o&#8217;clock is <em>hell</em> for cyclists. It is literally faster to walk my bike back down to Randolph than to try riding around the huge buses, tired commuters and insane cabbies. (My route home takes me back to Wicker Park via Randolph, Halsted and Milwaukee, plus some side streets.)</p></li>
+</ol>
+<p>Can you see the common element here? It took me until this morning to realize it: that I could simply <em>park on Randolph</em>, across from Intelligentsia and that would make everything simpler. I even parked on the right side of the street so I could more easily just hop on and immediately have a clear path to start riding west.</p>
+
+<h3>Holding the bread</h3>
+
+<p>Did you know that a typical <a href="http://www.jimmyjohns.com/">Jimmy John&#8217;s</a> club sandwich has over 750 calories? I didn&#8217;t realize it until a few weeks ago, when I grabbed one for dinner, then had to input the nutritional info into <a href="http://www.freshapps.com/lose-it/">Lose It!</a> and realized one sandwich (plus a bag of reduced fat chips) had blown away half my daily calorie budget.</p>
+
+<p>Since then I&#8217;ve tried to avoid those delicious JJ&#8217;s sandwiches, a greater challenge now because my new office <em>has a Jimmy John&#8217;s in the lobby</em>.</p>
+
+<p>Anyway, I remembered they offer something called an &#8220;UnWich&#8221;, which is their name for a sandwich wrapped in lettuce instead of bread. It turns out that the bread alone on one of their &#8216;Giant Club Sandwiches&#8217; accounts for more than <em>300 calories</em>. The #16 Club Lulu (with double helpings of turkey and bacon) is 790 calories on a sub roll, but just <em>455 calories</em> wrapped in lettuce.</p>
+
+<p>300 calories is, for me, almost a full breakfast. More to the point: it&#8217;s 2/3rds of a cookie. The sub roll, my least favorite part of the sandwich, is something I can easily drop from my diet to make room for <em>more cookies.</em></p>
+
+<p>So, I ordered the UnWich version of that sandwich, and it was <em>delicious</em>. The lettuce was crispy, and the turkey and bacon were even more flavorful for not being surrounded by a huge mass of bread.</p></div>
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/141584265/lifestyle-innovation">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                2 days ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+            
+        <div class="post">
+          
+          
+          
+          
+        
+          
+          
+          
+            
+          
+            <div class="title">What we learned today</div>
+            <div class="copy"><p>Perhaps I&#8217;m too accustomed to coffee shop wi-fi, but I keep thinking this 3G wireless doo-dad is on a 2 hour time limit.</p>
+
+<p>Once, we envied those dudes who ride their bikes like hell up the lakefront trail, leaving every other cyclist, jogger, rollerblader and circus freak in their dust. Today, we are those dudes.</p>
+
+<p>I worried I had whiffed a job interview on Tuesday. 48 hours later, I am scheduled for four hours of on-site interviews for that job. Next time I&#8217;m worried like that I should tell my inner voice to keep his damned mouth shut.</p>
+
+<p>Skinny people are no longer allowed to eat the following foods:</p>
+
+<ul>
+<li>French fries (particularly sweet potato fries, served with a spicy mayo dipping sauce)</li>
+<li>Any item from Dairy Queen</li>
+<li>Beef</li>
+</ul>
+<p>(&#8220;Skinny&#8221; defined here as having a waist size smaller than, say, 34 inches.)</p>
+
+<p>Things that are difficult to overcome: depression, fear of snakes, those fire-proof insect monsters that show up around wave 30 in <a href="http://stardefense.ngmoco.com/">Star Defense</a>.</p></div>
+          
+        
+          
+          
+          
+          
+          <a href="http://demaree.me/post/126158564/what-we-learned-today">
+            <div class="footer">
+              <div class="date">
+                
+                
+                Posted
+                
+                4 weeks ago
+                
+                
+                
+                
+                                
+              </div>
+              
+              <div class="clear"></div>
+            </div>
+          </a>
+          
+          
+          
+          
+        </div>
+        <div class="bottom"></div>
+      
+      
+      
+        <div id="navigation">
+          
+          <a href="/page/2">next page &rarr;
+        </div>
+      
+      
+    </div>
+    
+    <div id="sidebar">
+      <div id="top">
+        <div id="avatar"><a href="/"><img src="http://assets.tumblr.com/images/default_avatar_128.gif" /></a></div>
+        <div id="description"></div>
+        
+        <div id="search">
+          <form action="/search" method="get" id="search-form">
+            <input type="hidden" name="t" value="demaree" />
+            <input type="hidden" name="scope" value="all_of_tumblr" />
+            <input type="text" name="q" class="query" value="" />
+            <input type="submit" value="Search" class="submit" />
+            <div class="clear"></div>
+          </form>
+        </div>
+        <div id="search-scope">
+          <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">My Blog</label>
+          <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://tumblr.com/search'">All of Tumblr</label>
+        </div>
+        
+        <a href="http://www.tumblr.com/follow/demaree"><div class="heading" id="followontumblr">Follow on Tumblr</div></a>
+        
+        
+        
+        
+        
+        <div id="buttons">
+          <div class="row">
+            <div class="button" id="button-rss"><a href="http://demaree.me/rss">RSS Feed</a></div>
+            <div class="button" id="button-random"><a href="/random">Random</a></div>
+          </div>
+          <div class="clear"></div>
+          <div class="row">
+            <div class="button" id="button-archive"><a href="/archive">Archive</a></div>
+            <div class="button" id="button-mobile"><a href="/mobile">Mobile</a></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        
+      </div>
+      
+      <div id="bottom"></div>
+      <div id="copyright">&copy; 2009 <a href="http://www.tumblr.com">Powered by Tumblr</a></div>
+    </div>
+    
+    <div class="clear"></div>
+  </div>
+  
+<!-- BEGIN TUMBLR CODE -->
+<iframe src="http://www.tumblr.com/dashboard/iframe?src=http%3A%2F%2Fdemaree.me%2F" 
+border="0" scrolling="no" width="325" height="25" allowTransparency="true"
+frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px;
+background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe><script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;"/></noscript><!-- END TUMBLR CODE --></body>
+</html>
