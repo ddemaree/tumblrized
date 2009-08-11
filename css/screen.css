@@ -13,37 +13,50 @@ body {
 	margin: 20px auto;
 }
 
+#main {
+	
+}
+
 #posts {
 	margin-left: 10px;
 	width: 540px;
 	float: left;
+	padding: 40px 0;
 }
 
-#sidebar {
+#sidebar, #intro {
 	margin-right: 10px;
 	float: right;
 	width: 220px;
-	background: #aaa;
+}
+
+#sidebar {
+	padding-top: 46px;
 }
 
 /* @group Header */
 
 #header {
-	padding: 0 0 20px;
+	padding: 0 20px;
 }
 
-#header h1 {
-	font-size: 24px;
+#intro h1 {
+	font-size: 19px;
+	line-height: 19px;
 	background: #000;
 	color: #fff;
-	padding: 10px;
+	padding: 6px 10px;
 	float: left;
+	margin-left: -10px;
+	margin-bottom: 20px;
+	
+	position: absolute;
 }
 
 /* @end */
 
 #posts {
-	background: #ccc;
+	/*background: #ccc;*/
 }
 
 /* @group Posts */
@@ -59,10 +72,35 @@ body {
 	margin-left: -80px;
 }
 
-#posts .post .meta {
+.post .meta {
 	float: left;
 	width: 64px;
-	padding-right: 16px;
+	margin-right: 16px;
+	text-align: right;
+	background-color: #f2e6b2;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-transition: background-color 0.2s ease-in;
+}
+
+.post .meta:hover {
+	background-color: #f80;
+}
+
+.post .meta .date {
+	display: block;
+}
+
+.post .meta a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 5px 10px 5px;
+	-webkit-transition: color 0.2s ease-in;
+}
+
+.post .meta:hover a {
+	color: #fff;
 }
 
 #posts .post .content {
@@ -70,6 +108,54 @@ body {
 	width: 540px;
 }
 
+/* # quote */
+ 
+.post.quote .content {
+	padding-bottom: 16px;
+}
+.post.quote blockquote {
+	margin: 4px 10px 0 10px;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 17px;
+	line-height: 24px;
+	color: #333;
+	display: block;
+}
+ 
+blockquote .quotes {
+	display: inline;
+	font-size: 48px;
+	vertical-align: bottom;
+	line-height: 0px;
+	padding: 0 10px;
+	margin: 0 0 0 -10px;
+	color: #bbb;
+	/*text-shadow: #14151c 0 -1px 0;*/
+}
+
+.post.quote .source:before {
+	content: "\2014";
+}
+
+.post.quote .source {
+	font: 12px/20px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	vertical-align: middle;
+	white-space: nowrap;
+	/*color: #8a8c93;
+	margin-left: -8px;*/
+}
+ 
+.post.quote .source .note {
+	font-size: 12px;
+	margin-bottom: -6px;
+}
+
+.post.video .content .video {
+	background: #aaa;
+	padding: 18px 20px 12px;
+	-webkit-border-radius: 18px;
+}
 
 /* @end */
 
