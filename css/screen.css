@@ -1,16 +1,25 @@
+/* @override file:///Users/david/Sites/tumblr/css/screen.css */
+
 @import url(reset.css);
 
 body {
-	background: #fff;
+	background-color: #dee4ea;
 	color: #333;
 	font-family: Helvetica;
 	font-size: 13px;
 	line-height: 1.6em;
 }
 
+a:link {
+	color: #2c6db2;
+}
+
 #container {
+	margin-left: auto;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-top: 0px;
 	width: 800px;
-	margin: 20px auto;
 }
 
 #main {
@@ -37,20 +46,37 @@ body {
 /* @group Header */
 
 #header {
-	padding: 0 20px;
+	height: 50px;
+	
+	position: relative;
 }
 
-#intro h1 {
-	font-size: 19px;
+#header h1 {
+	font-size: 24px;
+	font-weight: normal;
 	line-height: 19px;
-	background: #000;
-	color: #fff;
-	padding: 6px 10px;
-	float: left;
-	margin-left: -10px;
+	background: #699e00;
+	color: #bbd389;
+	padding: 26px 20px 12px;
 	margin-bottom: 20px;
-	
 	position: absolute;
+	width: 520px;
+	left: 0px;
+	top:0;
+	-webkit-border-bottom-left-radius: 10px;
+}
+
+#header h1 em {
+	font-size: 0.6em;
+	position: relative;
+	top: -0.1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#header h1 strong {
+	color: white;
+	font-weight: 900;
 }
 
 /* @end */
@@ -73,11 +99,12 @@ body {
 }
 
 .post .meta {
+	color: #6181ff;
 	float: left;
 	width: 64px;
 	margin-right: 16px;
-	text-align: right;
-	background-color: #f2e6b2;
+	text-align: center;
+	background-color: #d0c9e4;
 	-webkit-border-top-right-radius: 8px;
 	-webkit-border-bottom-left-radius: 8px;
 	-webkit-transition: background-color 0.2s ease-in;
@@ -93,7 +120,7 @@ body {
 
 .post .meta a {
 	text-decoration: none;
-	color: #333;
+	color: #706889;
 	display: block;
 	padding: 5px 10px 5px;
 	-webkit-transition: color 0.2s ease-in;
@@ -113,10 +140,9 @@ body {
 .post.quote .content {
 	padding-bottom: 16px;
 }
+
 .post.quote blockquote {
 	margin: 4px 10px 0 10px;
-	font-family: Georgia;
-	font-style: italic;
 	font-size: 17px;
 	line-height: 24px;
 	color: #333;
@@ -139,11 +165,15 @@ blockquote .quotes {
 }
 
 .post.quote .source {
-	font: 12px/20px HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #576e85;
+	font-size: 14px;
+	line-height: 20px;
 	vertical-align: middle;
 	white-space: nowrap;
-	/*color: #8a8c93;
-	margin-left: -8px;*/
+}
+ 
+.post.quote .source a {
+	color: inherit;
 }
  
 .post.quote .source .note {
@@ -152,10 +182,46 @@ blockquote .quotes {
 }
 
 .post.video .content .video {
-	background: #aaa;
+	background: #cdd6de;
 	padding: 18px 20px 12px;
-	-webkit-border-radius: 18px;
+	-webkit-border-top-right-radius: 18px;
+	-webkit-border-bottom-left-radius: 18px;
+	-webkit-box-shadow: 1px 1px 1px #fff;
 }
 
 /* @end */
 
+.post.link .link {
+	overflow: hidden;
+}
+
+.post.link .link a {
+	background: #000;
+	color: #fff;
+	font-size: 18px;
+	padding: 4px 8px;
+	float: left;
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.post.link .content p {
+	margin: 1em 0;
+}
+
+.post.link .tk-pnova.copy p {
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+.post.link .link a canvas {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -3px;
+}
+
+.post.link .link a.canvased {
+	padding-right: 30px;	
+}

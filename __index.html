@@ -2,87 +2,60 @@
 
 <html lang="en">
 	<head>
-		<title>demaree dot me</title>
+		<title>demaree.me</title>
 		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		
-		<script type="text/javascript" src="http://use.typekit.com/pgj5xei.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-		
-		function makeFancy(canvas){
-			var cHeight = $(canvas).height();
-			console.log(cHeight);
-			
-			var cWidth  = $(canvas).width();
-			
-			// var rounderTop = Math.ceil((cHeight - 10) / 2);
-			// 			var rounderLeft = Math.ceil(cWidth - 5);
-			
-			var cpX = cWidth;
-			var cpY = Math.ceil(cHeight / 2);
-			
-			var cx = canvas.getContext("2d");
-			
-			cx.fillStyle = "white";
-			cx.moveTo(0,0);
-			cx.lineTo(cpX,cpY);
-			cx.lineTo(0,cHeight);
-			cx.fill();
-			cx.closePath();
-		}
-		
-		$(document).ready(function(){
-			$('.post.link .link a').each(function(){
-				$(this).append('<canvas width="8" height="8"></canvas>');
-				var canvas = $(this).find('canvas').get(0);
-				makeFancy(canvas);
-				$(this).addClass('canvased');
-			})
-		});
-		
-		</script>
 	</head>
 	
-	<body>	
-	<div id="container">
-	
-	<div id="header">
-		<h1 class="tk-proxima-nova">
-			<em>Welcome to</em>
-			<strong>demaree.me</strong>
-		</h1>
-	</div>
+	<body>
+	<div id="container" class="container_12">
+		<div class="header">
+			
+			
+			
+			
+		</div>
 		
-	<div id="main" class="clearfix">
 		
-		<div id="posts" class="section">
+		
+		<div id="main" class="clearfix">
+			
+			<div id="posts" class="section">
 				
-			<div class="post quote">
-				<div class="meta">
-					<a href="http://demaree.me/post/143620112">
-						<span class="symbol">&#9733;</span>
-						<span class="date">
-							<span class="day">17</span>
-							<span class="month">July</span>
-						</span>
-					</a>
+				
+				<div class="post quote">
+					<div class="meta">
+						<a href="http://demaree.me/post/143620112">
+							<span class="symbol">&#9733;</span>
+							<span class="date">
+								<span class="day">17</span>
+								<span class="month">July</span>
+							</span>
+						</a>
+					</div>
+					<div class="content">
+						<div class="quote long">
+							[Some developers] seem to find writing cover letters too tedious to bother with. Instead, they&rsquo;ll find jobs through networking, or the jobs will just come to them. Personally, I would be highly dubious of a company that hires simply based on who you know. That seems like the kind of company where you end up working with the boss&rsquo;s nephew who is &ldquo;good with computers&rdquo;. A company&rsquo;s hiring process is usually a pretty good indicator of what kind of talent it employs, and thus the kind of quality the company has.
+						</div>
+						<div class="copy">
+							<div class="quotebg">
+								&ldquo;
+							</div>
+							<table border="0" cellpadding="0" cellspacing="0" align="right">
+								<tr>
+									<td valign="top" style="width: 20px">
+										&mdash;
+									</td>
+									<td valign="top" class="quote_source">
+										<a href="http://hicks-wright.net/blog/reddits-entitlement-complex/">Reddit&rsquo;s Entitlement Complex</a> (via <a href="http://www.37signals.com/svn/">Signal vs. Noise</a>)
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 				</div>
-				<div class="content">
-					<blockquote class="tk-proxima-nova">
-						<span class="quotes">&ldquo;</span>
-						[Some developers] seem to find writing cover letters too tedious to bother with. Instead, they&rsquo;ll find jobs through networking, or the jobs will just come to them. Personally, I would be highly dubious of a company that hires simply based on who you know. That seems like the kind of company where you end up working with the boss&rsquo;s nephew who is &ldquo;good with computers&rdquo;. A company&rsquo;s hiring process is usually a pretty good indicator of what kind of talent it employs, and thus the kind of quality the company has.
-						<span class="quotes">&rdquo;</span>
-						
-						<span class="source tk-proxima-nova">
-							<a href="http://hicks-wright.net/blog/reddits-entitlement-complex/">Reddit&rsquo;s Entitlement Complex</a> (via <a href="http://www.37signals.com/svn/">Signal vs. Noise</a>)
-						</span>
-					</blockquote>
-					
-				</div>
-			</div>
-		
-			<hr>
+				
+				<hr>
 				
 				<div class="post video">
 					<div class="meta">
@@ -95,14 +68,12 @@
 						</a>
 					</div>
 					<div class="content">
-						<div class="video">
-							<object width="500" height="411">
-								<param name="movie" value="http://www.youtube.com/v/LU5rpwG4W8g&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1">
-								<param name="wmode" value="transparent">
-								<param name="allowFullScreen" value="true">
-								<embed src="http://www.youtube.com/v/LU5rpwG4W8g&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowfullscreen="true" wmode="transparent">
-							</object>
-						</div>
+						<object width="500" height="411">
+							<param name="movie" value="http://www.youtube.com/v/LU5rpwG4W8g&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1">
+							<param name="wmode" value="transparent">
+							<param name="allowFullScreen" value="true">
+							<embed src="http://www.youtube.com/v/LU5rpwG4W8g&amp;rel=0&amp;egm=0&amp;showinfo=0&amp;fs=1" type="application/x-shockwave-flash" width="500" height="411" allowfullscreen="true" wmode="transparent">
+						</object>
 					</div>
 				</div>
 				
@@ -110,24 +81,19 @@
 				
 				<div class="post link">
 					<div class="meta">
-						<a href="http://demaree.me/post/143620112">
-							<span class="symbol">&#9733;</span>
-							<span class="date">
-								<span class="day">17</span>
-								<span class="month">July</span>
-							</span>
-						</a>
+						<a href="http://demaree.me/post/143620112">&#9733;</a>
+						<strong>16 July</strong>
 					</div>
 					<div class="content">
-						<div class="link tk-proxima-nova">
-							<a href="http://www.zeldman.com/2009/07/16/html-5-is-a-mess-now-what/">Jeffrey Zeldman: &ldquo;HTML 5 is a mess. Now what?&rdquo;</a>
+						<div class="link">
+							<a href="http://www.zeldman.com/2009/07/16/html-5-is-a-mess-now-what/">Jeffrey Zeldman: "HTML 5 is a mess. Now what?" &rarr;</a>
 						</div>
-						<div class="copy tk-pnova">
+						<div class="copy">
 							<p>
-								Less an opinion than a summary of the discussion that&rsquo;s flared up since XHTML2 was killed earlier this month.
+								Less an opinion than a summary of the discussion that’s flared up since XHTML2 was killed earlier this month.
 							</p>
 							<p>
-								As this developer sees it, a lot of people seem to have confused a couple of awesome HTML5 features &mdash; standards-based video embedding, client-side database support, cool new structural tags like <code>header</code> &mdash; for the spec as a whole. The new HTML 5 <em>features</em> are undeniably awesome, and hopefully we won&rsquo;t have to wait till 2015 to enjoy them. But having to use classes or IDs to denote sidebars or dialogue is hardly the most annoying or problematic thing about HTML, and the idea that if WHATWG disagrees with a change they can just fork the spec is simply insane.
+								As this developer sees it, a lot of people seem to have confused a couple of awesome HTML5 features — standards-based video embedding, client-side database support, cool new structural tags like <code>header</code> — for the spec as a whole. The new HTML 5&nbsp;<em>features</em> are undeniably awesome, and hopefully we won’t have to wait till 2015 to enjoy them. But having to use classes or IDs to denote sidebars or dialogue is hardly the most annoying or problematic thing about HTML, and the idea that if WHATWG disagrees with a change they can just fork the spec is simply insane.
 							</p>
 						</div>
 					</div>
@@ -227,9 +193,9 @@
 				</div>
 			
 			</div>
-			
-			<div id="sidebar" class="section sidebar">
-				<h2>This is <strong>David Demaree</strong>&rsquo;s personal blog.</h2>
+		
+			<div id="sidebar" class="grid_3 suffix_1 omega">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
 			
 		</div>
@@ -237,6 +203,7 @@
 		<div id="footer">
 			Copyright &copy;2009 David Demaree
 		</div>
-	</div>	
+		
+	</div>
 	</body>
 </html>
