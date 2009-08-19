@@ -5,62 +5,17 @@
 		<title>demaree dot me</title>
 		<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://use.typekit.com/pgj5xei.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	
-	<body>
-		
-		<canvas id="canvasr" height="24" width="200" style="display:none"></canvas>
-		<canvas id="canvas2" height="100" width="100"></canvas>
-		
-		<script type="text/javascript" charset="utf-8">
-		var elem = document.getElementById('canvasr');
-		var cx   = elem.getContext("2d");
-		
-		cx.strokeStyle = "#999";
-		cx.beginPath();
-		cx.moveTo(0, 24);
-		cx.lineTo(200, 24);
-		cx.stroke();
-		cx.closePath();
-		
-		var output = document.getElementById('urlr');
-		var dataUrl = elem.toDataURL();
-		
-		var c2 = document.getElementById('canvas2');
-		var cx = c2.getContext('2d');
-		cx.fillStyle = "#000";
-		cx.strokeStyle = "#000";
-		
-		cx.beginPath();
-		var eradians = (Math.PI / 180) * 360;//Math.PI + (Math.PI * 2) / 2;
-		cx.arc(50,50,50,0,eradians,true);
-		cx.fill();
-		cx.closePath();
-		
-		cx.fillStyle = "#fff";
-		cx.fillRect(20,35,40,30);
-		
-		cx.beginPath();
-		cx.moveTo(50,50);
-		cx.lineTo(50,15);
-		cx.lineTo(85,50);
-		cx.lineTo(50,85);
-		cx.lineTo(50,50);
-		cx.fill();
-		cx.closePath();
-		
-		$(document).ready(function(){
-			jQuery('blockquote').css("background-image","url("+dataUrl+")");
-		});
-		
-		</script>
-		
+	<body>	
 	<div id="container">
 		
 	<div id="main" class="clearfix">
 		
 		<div id="intro" class="section sidebar">
-			<h1>Welcome to demaree.me.</h1>
+			<h1><strong class="tk-pnova">Welcome to demaree.me.</strong></h1>
 		</div>
 			
 		<div id="posts" class="section">
@@ -76,7 +31,7 @@
 					</a>
 				</div>
 				<div class="content">
-					<blockquote>
+					<blockquote class="tk-pnova">
 						<span class="quotes">&ldquo;</span>
 						[Some developers] seem to find writing cover letters too tedious to bother with. Instead, they&rsquo;ll find jobs through networking, or the jobs will just come to them. Personally, I would be highly dubious of a company that hires simply based on who you know. That seems like the kind of company where you end up working with the boss&rsquo;s nephew who is &ldquo;good with computers&rdquo;. A company&rsquo;s hiring process is usually a pretty good indicator of what kind of talent it employs, and thus the kind of quality the company has.
 						<span class="quotes">&rdquo;</span>
