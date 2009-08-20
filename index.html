@@ -12,18 +12,11 @@
 		
 		function makeFancy(canvas){
 			var cHeight = $(canvas).height();
-			console.log(cHeight);
-			
 			var cWidth  = $(canvas).width();
-			
-			// var rounderTop = Math.ceil((cHeight - 10) / 2);
-			// 			var rounderLeft = Math.ceil(cWidth - 5);
-			
 			var cpX = cWidth;
 			var cpY = Math.ceil(cHeight / 2);
-			
-			var cx = canvas.getContext("2d");
-			
+
+			var cx = canvas.getContext("2d");		
 			cx.fillStyle = "white";
 			cx.moveTo(0,0);
 			cx.lineTo(cpX,cpY);
@@ -34,7 +27,7 @@
 		
 		$(document).ready(function(){
 			$('.post.link .link a').each(function(){
-				$(this).append('<canvas width="8" height="8"></canvas>');
+				$(this).append('<canvas width="12" height="8"></canvas>');
 				var canvas = $(this).find('canvas').get(0);
 				makeFancy(canvas);
 				$(this).addClass('canvased');
@@ -129,25 +122,14 @@
 							<p>
 								As this developer sees it, a lot of people seem to have confused a couple of awesome HTML5 features &mdash; standards-based video embedding, client-side database support, cool new structural tags like <code>header</code> &mdash; for the spec as a whole. The new HTML 5 <em>features</em> are undeniably awesome, and hopefully we won&rsquo;t have to wait till 2015 to enjoy them. But having to use classes or IDs to denote sidebars or dialogue is hardly the most annoying or problematic thing about HTML, and the idea that if WHATWG disagrees with a change they can just fork the spec is simply insane.
 							</p>
+							<p>
+								<a href="#">Visit this page &rsaquo;</a>
+							</p>
 						</div>
 					</div>
 				</div>
 
 
-				<hr>
-
-				<div class="post photo">
-					<div class="meta">
-						<a href="http://demaree.me/post/143620112">&#9733;</a>
-						<strong>16 July</strong>
-					</div>
-					<div class="content">
-						<div class="media">
-							<a href="http://consumerist.com/5315276/jewel%20osco-resorts-to-sarcasm#c14244383"><img src="http://1.media.tumblr.com/FdFFtXHlopz2uxxqLFqLdQ7eo1_400.jpg" alt=""></a>
-						</div>
-					</div>
-				</div>
-				
 				<hr>
 				
 				<div class="post photo">
